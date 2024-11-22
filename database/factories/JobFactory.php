@@ -19,7 +19,7 @@ class JobFactory extends Factory
         return [
             'company'=>$this->faker->realText($maxNbChars = 200),
             'offer'=>$this->faker->realText($maxNbChars = 200),
-            'status' =>$this->faker->boolean(),
+            'status' =>$this->faker->boolean(), 
         ];
     }
 }
