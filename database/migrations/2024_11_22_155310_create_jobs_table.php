@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('company');
             $table->text('offer');
             $table->boolean('status');
-        });
+        }); 
     }
 
     /**
