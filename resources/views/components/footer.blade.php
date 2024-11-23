@@ -12,6 +12,6 @@
         <a href="https://www.instagram.com/alvarocerveraa/profilecard/?igsh=aXBrYTg1eW9lcWp4">
             <img src="https://skillicons.dev/icons?i=instagram" alt="">
             <div class="instagram button"></div>
-        </a>
+        </a> 
     </div>
 </footer>
