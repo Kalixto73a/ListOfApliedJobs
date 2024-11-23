@@ -15,7 +15,7 @@ class JobController extends Controller
         $jobs = Job::all();
         return view('home', 'compact'('jobs'));
     }
-
+ 
     /**
      * Show the form for creating a new resource.
      */
