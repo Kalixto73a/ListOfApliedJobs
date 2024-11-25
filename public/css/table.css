@@ -1,0 +1,69 @@
+.tableJobs {
+    margin: 10px auto;
+    padding: 10px;
+    background: linear-gradient(90deg, #31336e, #10b5a7);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 98%;
+    display: flex;
+    min-height: 100%;
+    max-height: 800px;
+    overflow-y:auto;
+}
+@media (min-width: 1200px) {
+    .tableJobs {
+        max-width: 100%; 
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .table-container {
+        overflow-x: hidden;
+    }
+    .table {
+        font-size: 12px; 
+    }
+}@media (max-width: 767px){
+    .table-container {
+        overflow-x: hidden;
+    }
+    .table {
+        font-size: 12px; 
+    }
+}
+@media (mix-width: 1600px) {
+    .table-container {
+        overflow-x: hidden;
+    }
+    .tableJobs{
+        max-width: 100% ;
+    }
+}
+.table {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: center; 
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;  
+}
+.table thead th {
+    background: linear-gradient(90deg, #31336e, #10b5a7);
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 200, 0.4);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(200, 200, 255, 0.4);
+}
+td:nth-child(3):hover{
+    font-size: 17px;
+    transition: font-size 0.5s ease;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

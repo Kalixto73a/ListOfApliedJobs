@@ -16,7 +16,7 @@
                     <td>{{ $job->created_at}}</td>
                     <td>{{ $job->company}}</td>
                     <td>{{ $job->offer}}</td>
-                    <td>{{ $job->status}}</td>
+                    <td>{{ $job->status_text}}</td>
                 </tr>
             @endforeach
         <tr>

@@ -13,4 +13,8 @@ class Job extends Model
       'offer',
       'status', 
     ];
+    public function getStatusTextAttribute()
+    {
+        return $this->status ? 'Finalizado' : 'En Curso';
+    }
 }

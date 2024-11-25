@@ -1,0 +1,24 @@
+footer {
+    background: linear-gradient(90deg, #31336e, #5f64f9);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}

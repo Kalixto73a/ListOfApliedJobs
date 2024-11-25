@@ -1,0 +1,16 @@
+header {
+    background: linear-gradient(90deg, #31336e, #5f64f9);
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+}

@@ -1,3 +1,3 @@
 <header>
-    <h1>JobFinding</h1>
+    <h2>🔍JobFinding🔍</h2>
 </header>
