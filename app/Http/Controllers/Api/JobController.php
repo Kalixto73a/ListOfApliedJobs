@@ -30,7 +30,7 @@ class JobController extends Controller
     {
         $job = Job::find($id);
         return response()->json($job,200);
-    }
+    } 
 
     public function update(Request $request, string $id)
     {
