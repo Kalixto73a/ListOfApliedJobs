@@ -13,7 +13,9 @@
         <tbody>
             @foreach ($jobs as $job)
                 <tr>
-                    <td>{{ $job->created_at}}</td>
+                    <td><div>{{ $job->created_at->format("d/m/Y/H:i:s")}}</div>
+                        <div>{{$job->updated_at->format("d/m/Y/H:i:s")}}</div>
+                    </td>
                     <td>{{ $job->company}}</td>
                     <td>{{ $job->offer}}</td>
                     <td>{{ $job->status_text}}</td>
