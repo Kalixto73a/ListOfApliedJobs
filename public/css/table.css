@@ -61,6 +61,7 @@
     background-color: rgba(200, 200, 255, 0.4);
 }
 td:nth-child(3):hover{
+    max-width: 100px;
     font-size: 17px;
     transition: font-size 0.5s ease;
     color: blue;
