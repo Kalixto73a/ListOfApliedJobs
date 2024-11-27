@@ -9,3 +9,4 @@ Route::delete('/journals/{id}', [JobController::class, 'destroy'])->name('apides
 Route::post('/journals', [JobController::class, 'store'])->name('apistore');
 Route::put('/journals/{id}', [JobController::class, 'update'])->name('apiupdate');
 Route::get('/journals/{id}',[JobController::class, 'show'])->name('apishow');
+ 
