@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Models\Job;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class JobController extends Controller
 {
@@ -12,10 +13,10 @@ class JobController extends Controller
      */
     public function index()
     {
-        $jobs = Job::get();
-        return view('home', compact('jobs'));
+        $jobs = Job::all();
+        return response()->json($jobs, 200);
     }
- 
+
     /**
      * Show the form for creating a new resource.
      */
@@ -29,7 +30,7 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
