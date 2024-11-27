@@ -28,7 +28,8 @@ class JobController extends Controller
  
     public function show(string $id)
     {
-        //
+        $job = Job::find($id);
+        return response()->json($job,200);
     }
 
     public function update(Request $request, string $id)
