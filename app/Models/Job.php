@@ -17,4 +17,4 @@ class Job extends Model
     {
         return $this->status ? 'En Curso' : 'Finalizado';
     } 
-}
+} 
