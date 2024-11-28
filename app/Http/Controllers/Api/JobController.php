@@ -41,7 +41,7 @@ class JobController extends Controller
         ]);
         $job->save();
         return response()->json($job, 200);
-    }
+    } 
 
     public function destroy(string $id)
     {
