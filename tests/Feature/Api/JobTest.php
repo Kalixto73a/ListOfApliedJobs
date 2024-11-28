@@ -78,6 +78,6 @@ class JobTest extends TestCase
         $this->assertEquals('En Curso', $job->status_text);
         $job->status=false;
         $this->assertEquals('Finalizado', $job->status_text);
-    }
+    } 
     
 }
