@@ -11,5 +11,5 @@ class JobController extends Controller
     {
         $jobs = Job::get();
         return view('home', compact('jobs'));
-    }
+    } 
 }
