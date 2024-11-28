@@ -34,7 +34,13 @@ class JobController extends Controller
 
     public function update(Request $request, string $id)
     {
-        //
+        $job = Job::find($id);
+
+        $job->update([
+            'status' => $request->status
+        ]);
+        $job->save();
+        return response()->json($job, 200);
     }
 
     public function destroy(string $id)
