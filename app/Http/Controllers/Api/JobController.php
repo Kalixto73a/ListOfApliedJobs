@@ -47,5 +47,5 @@ class JobController extends Controller
     {
         $job = Job::find($id);
         $job->delete();
-    }
+    } 
 }
