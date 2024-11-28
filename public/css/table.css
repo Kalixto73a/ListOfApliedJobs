@@ -15,28 +15,63 @@
         max-width: 100%; 
     }
 }
+td:nth-child(3):hover{
+    max-width: 50px;
+    font-size: 17px;
+    transition: font-size 0.5s ease;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
 @media (min-width: 768px) and (max-width: 1199px) {
     .table-container {
         overflow-x: hidden;
     }
-    .table {
+    .tableJobs {
         font-size: 12px; 
     }
-}@media (max-width: 767px){
+    td:nth-child(3):hover{
+        max-width: 50px;
+        font-size: 17px;
+        transition: font-size 0.5s ease;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }    
+}
+@media (min-width: 100px) and (max-width: 767px){
     .table-container {
         overflow-x: hidden;
     }
-    .table {
-        font-size: 12px; 
+    .table{
+        width: 97%;
+        font-size: 11px;
     }
+    td:nth-child(3):hover{
+        max-width: 50px;
+        font-size: 12px;
+        transition: font-size 0.5s ease;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    } 
 }
 @media (mix-width: 1600px) {
     .table-container {
         overflow-x: hidden;
     }
-    .tableJobs{
+    .table{
         max-width: 100% ;
     }
+    td:nth-child(3):hover{
+    max-width: 50px;
+    font-size: 17px;
+    transition: font-size 0.5s ease;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+} 
+    
 }
 .table {
     width: 100%;
@@ -60,11 +95,12 @@
 .table tbody tr:nth-child(even) {
     background-color: rgba(200, 200, 255, 0.4);
 }
-td:nth-child(3):hover{
-    max-width: 100px;
-    font-size: 17px;
-    transition: font-size 0.5s ease;
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-} 
+td:nth-child(2){
+    align-content: center;
+}
+td:nth-child(3){
+    align-content: center;
+}
+td:nth-child(4){
+    align-content: center;
+}
