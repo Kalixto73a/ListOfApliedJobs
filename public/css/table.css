@@ -15,7 +15,7 @@
         max-width: 100%; 
     }
 }
-td:nth-child(3):hover{
+td:nth-child(3):hover{ 
     max-width: 50px;
     font-size: 17px;
     transition: font-size 0.5s ease;
