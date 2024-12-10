@@ -12,6 +12,7 @@ class FollowFactory extends Factory
     public function definition(): array
     {
         return [
+            'jobs_id' => $this->faker->numberBetween(1,50),
             'news'=>$this->faker->realText($maxNbChars = 200),
         ];
     }
