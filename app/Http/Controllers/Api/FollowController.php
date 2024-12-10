@@ -6,6 +6,7 @@ use App\Models\Job;
 use App\Models\Follow;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class FollowController extends Controller
 {
@@ -35,8 +36,20 @@ class FollowController extends Controller
                 'job' => $job->load('follows'),
             ], 200);
     }
-    public function show(string $id){
-        $follows = Follow::findOrFail($id);
-        return response()->json($follows, 200);
+    public function show(string $jobId){
+        try{
+            $job = Job::findOrFail($jobId);
+            }
+            catch (ModelNotFoundException $e) {
+                return response()->json(['message' => 'A Job with that Id doesn´t exist'], 404);
+            }
+        $follows = Follow::where('job_id', $jobId)->get();
+            if ($follows->isEmpty()) {
+                return response()->json(['job'=> $job, 'message' => 'No follows found for this job.'], 200);
+            }
+        return response()->json([
+            'job' => $job,
+            'news' => $follows,
+        ]);
     }
 }

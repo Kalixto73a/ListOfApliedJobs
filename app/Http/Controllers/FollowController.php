@@ -18,4 +18,5 @@ class FollowController extends Controller
         $job = Job::findOrFail($id);
         return view('offer', compact('job')); 
     }
+    
 }
