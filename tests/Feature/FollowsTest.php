@@ -23,6 +23,6 @@ class FollowsTest extends TestCase
             $response->assertViewIs('home');
             $response->assertViewHas('jobs', $jobs);
         }
-    }    
+    }     
 }
 
