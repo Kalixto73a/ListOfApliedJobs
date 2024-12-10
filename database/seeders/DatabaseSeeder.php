@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Job::factory(50)->create([
+        Job::factory(15)->create([
             'company' => 'Intel',
             'offer' => 'BackendDeveloper Junior',
         ]);

@@ -13,7 +13,7 @@
        
         <x-header />
 
-        <main>
+        <main class="pageContainer">
             @yield('content')
         </main>
 

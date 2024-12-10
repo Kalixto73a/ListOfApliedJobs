@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(table.css);
+@import url(cards.css);
 
 html, body {
     margin: 0;

@@ -17,4 +17,8 @@ class Job extends Model
     {
         return $this->status ? 'En Curso' : 'Finalizado';
     } 
+    public function follows(){
+      return $this->hasMany(Follow::class);
+    }
 } 
+
