@@ -105,3 +105,7 @@ I used [drawSQL](https://drawsql.app) to do the correct structure of the DDBB
   <img src="public/img/DrawSQL.png" alt="Descripción de la imagen" width="600"/>
 </p>
 
+## 👩‍💻 Author
+- [Alvaro Cervera Vigara](https://github.com/Kalixto73a)
+
+
