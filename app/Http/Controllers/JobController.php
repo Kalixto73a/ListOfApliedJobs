@@ -9,7 +9,7 @@ class JobController extends Controller
 {
     public function index()
     {
-        $jobs = Job::get();
+        $jobs = Job::orderBy('id', 'desc')->get();
         return view('home', compact('jobs'));
     }
     public function show(string $id)

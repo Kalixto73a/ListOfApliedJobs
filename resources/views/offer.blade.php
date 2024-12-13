@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="ButtonHome">
+    <a href="{{ route('home') }}" class="btn btn-primary mt-3">Volver a la Lista</a>
+</div>
 <div class="tableJobs2">
     <table class="table">
         <thead>
@@ -33,7 +36,7 @@
 </div>
 <div>
     <div class="cards-container">
-        @forelse ($job->follows as $follow)
+        @forelse (collect($job->follows)->reverse() as $follow)
             <div class="card">
                 <div class="card-header">
                     <h5 class="card-header-text">Created at: <br>{{ $follow->created_at->format('d/m/Y H:i:s') }}</h5>
@@ -51,7 +54,5 @@
         @endforelse
     </div>
 </div>
-<div class="ButtonHome">
-    <a href="{{ route('home') }}" class="btn btn-primary mt-3">Volver a la Lista</a>
-</div>
+
 @endsection

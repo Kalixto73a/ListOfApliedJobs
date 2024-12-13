@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; 2024 Inside Out App. All Rights Reserved.</p>
+    <p>&copy; 2024 JobFinding. All Rights Reserved.</p>
     <div class="media-buttons">
         <a href="https://github.com/Kalixto73a">
             <img src="https://skillicons.dev/icons?i=github" alt="">
