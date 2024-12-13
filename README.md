@@ -66,13 +66,11 @@ This project has 6 endpoinst.
 ### ✏️✏️ Update (PUT)
 `http://127.0.0.1:8000/api/jobs/{jobId}`
 <br>
->[!NOTE]
-<br>
 >Here you can only change the value of Status to:
-<br>
->0 Finalizado
-<br>
->1 En curso
+><br>
+>0 = Finalizado
+><br>
+>1 = En curso
 
 ### ❌ Destroy (DELETE)
 `http://127.0.0.1:8000/api/jobs/{jobId}`
